@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(19, 19, 19, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Top Header */
+.header {
+    width: 100%;
+    background: #3f3f3f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+}
+
+.header h2 {
+    margin-bottom: 5px;
+    font-size: 24px;
+    color: aqua;
+}
+
+.header p {
+    font-size: 18px;
+    font-weight: bold;
+    color: yellow;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    background: #f8f5f5;
+    box-shadow: 10px 10px 15px #3f3f3f;
+    padding: 20px;
+    border-radius: 1rem;
+    margin-top: 20px;
+}
+
+h1 {
+    color: rgb(106, 0, 255);
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+input {
+    flex: 1;
+    min-width: 200px;
+    height: 35px;
+    padding-left: 13px;
+    color: red;
+    background: #d0c4c4;
+    border: solid #3f3f3f;
+    font-size: larger;
+    border-radius: 1.2rem;
+    box-shadow: 3px 3px 5px rebeccapurple;
+}
+
+input::placeholder {
+    color: red;
+    padding-left: 10px;
+    font-size: larger;
+    font-weight: 600;
+}
+
+button {
+    padding: 8px 15px;
+    border-radius: 1.2rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#add {
+    background: blue;
+    color: white;
+    box-shadow: 3px 3px 5px rebeccapurple;
+}
+
+#download {
+    background: green;
+    color: white;
+    box-shadow: 3px 3px 5px rebeccapurple;
+}
+
+ol {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+ol li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   /* background: #3f3f3f;*/
+    color: rgb(22, 21, 21);
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 0.8rem;
+    margin-top: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+ol li button {
+    display: none;
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 1rem;
+    font-size: 14px;
+}
+
+ol li.show-delete button {
+    display: inline-block;
+}
+
+@media (max-width: 600px) {
+    .header h2 {
+        font-size: 20px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    ol li {
+        font-size: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ol li button {
+        margin-top: 5px;
+    }
+}
